@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minutes to Seconds</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Enter Minutes" name="text" id="text_id"></br>
+        <input onclick="minutes_to_seconds()" type="submit" value="Convert to seconds">
+    </form>
+    <script>
+function minutes_to_seconds()
+{
+    let min=document.getElementById("text_id").value;
+min=Number(min);
+let seconds=min*60;
+let data=`${min} minutes in seconds =${seconds}s`;
+document.write(data);
+}
+    </script>
+</body>
+</html>

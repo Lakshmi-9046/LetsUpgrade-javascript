@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q-3-solution</title>
+</head>
+<body>
+    <script>
+            
+            var arr=["harika","Bhavani","sai","Manasa","lakshmi"];
+            document.write("enter the following elements\n"+arr);
+    </script>
+    <form action="">
+        <input type="text" placeholder="Enter the element to search" name="element" id="element"><br>
+        <input type="button" onclick="search()" value="search element">
+    </form>
+    <script>
+        function search()
+        {
+            let ele=document.getElementById("element").value.toString();
+        let i=arr.indexOf(ele);
+        let data=`${ele} at :${i} index`;
+        document.writeln(data);
+        }
+    </script>
+</body>
+</html>

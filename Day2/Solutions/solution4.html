@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question-4-solution</title>
+</head>
+<body>
+    <script>
+               var arr=["harika","Bhavani","sai","Manasa","lakshmi","Suresh","Devil"];  
+            document.writeln("following elements in array \n "+arr);
+    </script>
+    <form action="">
+        <input type="button" onclick="search()"value="print Elements contains 'a' ">
+    </form>
+    <script>
+     function search()
+     {
+        var arr=["harika","Bhavani","sai","Manasa","lakshmi","Suresh","Devil"];  
+       let i;
+       for(i=0;i<arr.length;i++)
+       {
+           if(arr[i].includes("a"))
+           {
+               document.writeln(arr[i]);
+           }
+       }
+     }
+       </script>
+</body>
+</html>

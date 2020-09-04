@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+    <form action="">
+        <input type="text" placeholder="Enter String" name="text" id="text_id"></br>
+        <input type="text" placeholder="enter the character" name="character" id="character_id"></br>
+        <input onclick="fun()" type="submit" value="submit">
+    </form>
+    <script>
+        function fun()
+        {
+            let str=document.getElementById("text_id").value.toString();
+        let char=document.getElementById("character_id").value.toString();
+        let index=str.indexOf(char);
+        var data =`${char} character is at: ${index}`;
+        document.write(data);
+        }
+    </script>
+</body>
+</html>

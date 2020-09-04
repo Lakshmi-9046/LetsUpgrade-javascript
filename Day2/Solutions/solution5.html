@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>solution-5</title>
+</head>
+<body>
+    <script>
+        var arr=["harika","Bhavani","sai","Manasa","lakshmi","Suresh","Devil"];  
+     document.writeln("The original order of elements =        ");
+     let i;
+     for(i=0;i<arr.length;i++)
+     {
+        document.writeln(arr[i]);
+     }
+</script>
+<form action="">
+ <input type="button" onclick="search()"value="Print in Reverse Order  ">
+</form>
+<script>
+function search()
+{
+    document.writeln("Reverse Order =   ")
+ var arr=["harika","Bhavani","sai","Manasa","lakshmi","Suresh","Devil"];  
+let i;
+for(i=arr.length-1;i>=0;i--)
+{
+    document.writeln(arr[i]);
+}
+}
+</script>
+</body>
+</html>
